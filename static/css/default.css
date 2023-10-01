@@ -420,7 +420,7 @@ h6{font-size: 16px;}
 
 @media screen and (max-width:1200px){
     .main-container{
-        width: 95%;
+        width: 100%;
        
     }
     
@@ -428,19 +428,31 @@ h6{font-size: 16px;}
 
 @media screen and (max-width:800px){
     .intra-wrapper{
-      
+        display: grid;
         grid-template-columns: 1fr ;
        
         grid-template-areas:
              'nav-wrapper '
              'left-column' 
-             'right-column'
-        
-        ;
+             'right-column';
     }
-    .right-column{
+    .right-column,
+    .left-column{
         justify-content: center;
+        text-align: center;
     }
-       
+    #profile-pic{
+       margin: 0 auto;
+       display: block;
+    }    
+    #theme-options-wrapper{
+        justify-content: center;
+        display: flex;
+        gap: 10px;
+    }   
+    #preview-shadow{
+        margin: 0 auto;
+        overflow: hidden;
+    }
    
 }

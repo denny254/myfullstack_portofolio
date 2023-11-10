@@ -1,6 +1,6 @@
 
 echo "Activating virtual environment..."
-source "$(winpty "D:/Django projects/KinangaSite/env/Scripts/activate.bat")"
+source "/d/Django projects/KinangaSite/env/Scripts/activate"
 
 echo "Installing/upgrading pip..."
 python -m pip install --upgrade pip

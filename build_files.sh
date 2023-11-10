@@ -1,6 +1,5 @@
-
 echo "Activating virtual environment..."
-source "D:/Django projects/KinangaSite/env/Scripts/activate.bat"
+source "$(cygpath -w "D:/Django projects/KinangaSite/env/Scripts/activate")"
 
 echo "Installing/upgrading pip..."
 python -m pip install --upgrade pip

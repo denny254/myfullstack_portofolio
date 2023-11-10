@@ -3,7 +3,7 @@
     "builds": [
       {
         "src": "kinangaSite/wsgi.py",
-        "use": "@vercel/python-django",
+        "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
       },
       {

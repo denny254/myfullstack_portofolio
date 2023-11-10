@@ -1,6 +1,4 @@
 
-echo "Activating virtual environment..."
-source "/d/Django projects/KinangaSite/env/Scripts/activate"
 
 echo "Installing/upgrading pip..."
 python -m pip install --upgrade pip

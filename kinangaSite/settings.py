@@ -12,9 +12,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-%swpyt8qq(uqii(5b%+=b*e-wr&)z3=6p1fs(bpmvxuyalpyxv"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = [".vercel.app", "now.sh", "127.0.0.1", "localhost"]
+# ALLOWED_HOSTS = [".vercel.app", "now.sh", "127.0.0.1", "localhost"]
 
 
 # Application definition
@@ -26,7 +26,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "base.apps.BaseConfig",
+
+
+    "app.apps.AppConfig",
     "crispy_forms",
     "crispy_bootstrap4",
     "django_filters",

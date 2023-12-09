@@ -12,9 +12,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-%swpyt8qq(uqii(5b%+=b*e-wr&)z3=6p1fs(bpmvxuyalpyxv"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True 
 
-ALLOWED_HOSTS = [".vercel.app", "now.sh", "127.0.0.1", "localhost"]
+# ALLOWED_HOSTS = [".vercel.app", "now.sh", "127.0.0.1", "localhost"]
 
 
 # Application definition
@@ -83,6 +83,19 @@ DATABASES = {
     }
 }
 
+# Session settings
+
+SESSION_ENGINE = "django.contrib.sessions.backends.db"
+SESSION_COOKIE_NAME = "sessionid"
+SESSION_COOKIE_AGE = 1209600
+SESSION_COOKIE_SECURE = False
+SESSION_COOKIE_HTTPONLY = True
+SESSION_SAVE_EVERY_REQUEST = False
+SESSION_EXPIRE_AT_BROWSER_CLOSE = False
+
+# Set the session timeout to one year (in seconds)
+# 1 year = 365 days * 24 hours * 60 minutes * 60 seconds
+SESSION_COOKIE_AGE = 365 * 24 * 60 * 60
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
